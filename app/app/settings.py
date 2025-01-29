@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'drf_spectacular',
+    'management',
 ]
 
 MIDDLEWARE = [
@@ -135,7 +136,9 @@ JAZZMIN_SETTINGS = {
         "auth": "fas fa-users-cog",
         "auth.user": "fas fa-user",
         "auth.Group": "fas fa-users",
-        "profiles": "fas fa-cogs",
+        "management": "fas fa-bars-progress",
+        "management.Class": "fas fa-people-group",
+        "management.Activity": "fas fa-newspaper",
         "reports.report": "fas fa-file-alt",
     },
     "default_icon_parents": "fas fa-chevron-circle-right",
