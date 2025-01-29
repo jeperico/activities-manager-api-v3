@@ -18,7 +18,7 @@ services:
       PGADMIN_EMAIL: ${PGADMIN_EMAIL}
       PGADMIN_PASSW: ${PGADMIN_PASSW}
     ports:
-      8081:80
+      - 8081:80
     networks:
       - postgres-network
 
