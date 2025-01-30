@@ -5,8 +5,8 @@ from rest_framework import routers
 router = routers.DefaultRouter()
 router.register(r'class', api.ClassViewSet)
 router.register(r'activity', api.ActivityViewSet)
-router.register(r'register-class', api.ClassRegister, basename='register-class')
-router.register(r'register-activity', api.ActivityRegister, basename='register-activity')
+router.register(r'class', api.ClassRegister, basename='register-class')
+router.register(r'activity', api.ActivityRegister, basename='register-activity')
 
 urlpatterns = [
   path('', include(router.urls)),
